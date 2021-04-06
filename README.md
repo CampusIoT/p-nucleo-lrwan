@@ -2,6 +2,11 @@
 
 In the directory projet-RIOT-LRWAN3, you will find three RIOT applications. They were designed to be compiled and flashed on a nucleo-l073rz board.
 
+Note : You must have the [RIOT base directory](https://github.com/RIOT-OS/RIOT) cloning in your computer. Change the following line in each **Makefile** to match the correct path :
+
+    # Path to the RIOT base directory
+    RIOTBASE ?= $(CURDIR)/../../../RIOT
+
 ## How to compile and flash 
 
 Place yourself in one of the three directory *AT-command* - *hello-world* - *sensors*, depending on which application you want to test. Then, just run this command in your terminal in order to compile the program and flash the firmware produced into your board.
